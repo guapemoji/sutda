@@ -41,6 +41,10 @@ function getcard() {
   go++;
   secondcard.src="images/" + card1[go] + ".png";
   go++;
+  if(go>20)
+    {
+      alert("카드가 더 이상 없습니다.");
+    }
 }
 
 </script>
