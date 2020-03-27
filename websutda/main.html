@@ -4,21 +4,9 @@
 <meta charset="UTF-8">
 <title>웹 섯다</title>
 </head>
-<style>
-.button {
-  background-color: blue;
-  border: none;
-  color: white;
-  padding: 150px 300px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 160px;
-  margin: 40px 20px;
-  cursor: pointer;
-}
-img {width:100px;}
-img {padding:10px;}
+<style type="text/css">
+#button button{ border: 1px solid skyblue; background-color: rgba(0,0,0,0); color: skyblue; padding: 5px; }
+
 </style>
 <script>
 var go = 0; // 카드에 번호 지정
@@ -57,10 +45,12 @@ function getcard() {
 
 </script>
 <body>
-<input type="button" value="패받기" onclick="getcard()">
-<input type="button" value="패섞기" onclick="shuffle(20)">
+  <div id="button">
+    <input type=button style="width:250px; height:100px; font-size:30px;" value="패받기" onclick="getcard()">
+    <input type=button style="width:250px; height:100px; font-size:30px;" value="패섞기" onclick="shuffle(20)">
+  </div>
 <br>
-<img src="images/a.png" id="firstcard">
-<img src="images/b.png" id="secondcard">
+<img src="images/a.png" style="width:250px; height:400px;" id="firstcard">
+<img src="images/b.png" style="width:250px; height:400px;" id="secondcard">
 </body>
 </html>
